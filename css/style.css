@@ -324,11 +324,126 @@ footer{
     }
 }
 
+@media (max-width:425px){
+    body{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    header img{
+        width: 60px;
+        height: 60px;
+        margin: 20px 30px;
+    }
+    .conteinerHeader{
+        justify-self: center;
+    }
+    .lista{
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav{
+        font-size: 20px;
+        margin: 0%;
+    }
+    .contenidoPrincipal h1{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .contenidoUnico h1{
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .banerDos{
+        height: 100px;
+    }
+    .banerTres{
+        height: 100px;
+    }
+    .textoColor p{
+        font-size: 20px;
+    }
+    .main h2{
+        font-size: 20px;
+    }
+    .tamanoImg{
+        width: 280px;
+        height: 280px;
+    }
+    .seccion1{
+        gap: 5px;
+        flex-direction: column;
+    }
+    .seccion2{
+        gap: 5px;
+        flex-direction: column;
+    }
+    .seccion3{
+        gap: 5px;
+        flex-direction: column;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /* mi carrito */
+    .inicioCuadro ul{
+        gap: 30px;
+        width: 380px;
+        height: 60px;
+        font-size: 15px;
+
+    }
+    .logo img{
+        width: 30px;
+    }
+    .logo p{
+        font-size: 15px;
+    }
+    .textoCompra{
+        font-size: 10px;
+    }
+    .logos{
+        width: 50px;
+        right: 50px;
+    }
+    .letrasLogos{
+        margin: 0 35px;
+    }
+    footer{
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+    footer p{
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 10px;
+    
+    }
+    .footer{
+        justify-content: center;
+    }
+    .footer img{
+        width: 40px;
+        height: 20px;
+    }
+
+
+}
+
+@media (max-width:375px){
+    
+}
 
 /* media queries escritorio a cel */
 @media (max-width:320px){
     body{
-        background-color: rgb(209, 237, 163);
         width: 100%;
     }
     header{
