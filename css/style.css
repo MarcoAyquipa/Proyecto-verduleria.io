@@ -1,0 +1,436 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+/* 
+colores
+    color de fondo
+    #D1E4CB
+    color de fondo
+    #D9D9D9
+    color de precios
+    #FE0B0B
+    color de barra de navegacion
+    #2F962D
+    color de las letras de la barra de nav
+    #F6EEEE
+    color de footer
+    #B9C7BA
+
+    fuentes para texto principal
+        font-family: 'Roboto Condensed', sans-serif;
+    fuentes para barra de nav
+        font-family: 'Tilt Warp', cursive;
+
+    */
+
+body{
+    background-color: #D1E4CB;
+}
+
+/* inicio de estilos de header */
+header{
+    background-color:  #2F962D;
+    width: 100%;
+}
+header img{
+    width: 150px;
+}
+.conteinerHeader{
+    display: flex;
+    width: 100%;
+}
+.barraNav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+.lista{
+    display: flex;
+    gap: 130px;
+    margin-top: 30px;
+}
+
+/* pseudoclase */
+.lista li a:hover{
+    color: red;
+    font-size: 29px;
+
+}
+
+/* barra de navegacion */
+nav{
+    color: white;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 30px;
+    margin: 0 30px;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    margin-left: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* inicio del main */
+.contenidoPrincipal h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    display: flex;
+    margin-top: 30px;
+
+    justify-content: center;
+}
+
+.contenidoUnico h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.banerUno{
+    width: 100%;
+}
+.banerDos{
+    width: 100%;
+    height: 300px;
+}
+.banerTres{
+    width: 100%;
+    height: 300px;
+}
+.textoColor p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+
+}
+.main h2{
+    display: flex;
+    justify-content: center;
+    color: red;
+    text-align: center;
+}
+.textoColor{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 10px;
+}
+
+
+/* tamano de imagen */
+.tamanoImg{
+    width: 350px;
+    height: 350px;
+}
+/* primera seccion del main */
+.seccion{
+    grid-area: item;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+
+}
+
+.seccion1{
+    grid-area: item1;
+    display: flex;
+    gap: 70px;
+    margin-bottom: 20px;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+    text-align: center;
+
+}
+
+.seccion2{
+    grid-area: item2;
+    display: flex;
+    gap: 70px;
+    margin-bottom: 20px;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    justify-self: center;
+    text-align: center;
+}
+
+.seccion3{
+    grid-area: item3;
+    display: flex;
+    gap: 70px;
+    margin-bottom: 20px;
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    justify-self: center;
+    text-align: center;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+
+
+}
+
+
+        /* cuadro de mi carrito */
+.inicioCuadro ul{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin-top: 30px;
+        text-align: center;
+        background-color: #B9C7BA;
+        height: 30px;
+        
+}
+
+.inicioCuadro ul li{
+    list-style: none;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.logoCarrito{
+    background-color: red;
+    width: 180px;
+    margin: 10px 10px 10px;
+} 
+
+.logoCarrito2{
+    background-color: #2F962D;
+    width: 180px;
+    margin: 10px 10px 10px;
+}
+
+.textoCompra{
+    text-align: center;
+}
+
+
+/* contactos formulario */
+.fondoBox{
+    background-color: #B9C7BA;
+}
+.box{
+    background-color: green;
+    width: 100px;
+    margin: 10px 10px;
+}
+
+/* logos de apartado contactos */
+.logos{
+    width: 80px;
+    right: 80px;
+    margin: 10px;
+}
+.letrasLogos{
+    margin: 0 10px;
+}
+
+
+/* inicio del footer */
+footer{
+    background-color: #B9C7BA;
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+.textoFooter{
+    margin-top: 30px;
+}
+
+
+/* media queries escritorio a tab */
+@media (max-width:768px){
+
+    /* header */
+    header{
+        width: 100%;
+    }
+    header img{
+        width: 100px;
+        height: 100px;
+    }
+    .barraNav{
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+    }
+    .lista{
+        gap: 25px;
+    }
+    .lista li a:hover{
+        font-size: 24px;
+    }
+    nav{
+        font-size: 25px;
+    }
+
+    /* main */
+    .contenidoPrincipal h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .contenidoUnico h1{
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .banerDos{
+        width: 180%;
+        height: 180px;
+    }
+    .banerTres{
+        width: 100%;
+        height: 180px;
+    }
+    .textoColor p{
+        font-size: 18px;
+    }
+    .main h2{
+        font-size: 20px;
+    }
+    .tamanoImg{
+        width: 180px;
+        height: 180px;
+    }
+    .seccion1{
+        gap: 10px;
+    }
+    .seccion2{
+        gap: 10px;
+    }
+    .seccion3{
+        gap: 10px;
+    }
+}
+
+
+/* media queries escritorio a cel */
+@media (max-width:320px){
+    body{
+        background-color: rgb(209, 237, 163);
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    header img{
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+    }
+    .conteinerHeader{
+        justify-self: center;
+    }
+    .lista{
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    nav{
+        font-size: 15px;
+        margin: 0%;
+    }
+    .contenidoPrincipal h1{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .contenidoUnico h1{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .banerDos{
+        height: 100px;
+    }
+    .banerTres{
+        height: 100px;
+    }
+    .textoColor p{
+        font-size: 15px;
+    }
+    .main h2{
+        font-size: 15px;
+    }
+    .tamanoImg{
+        width: 200px;
+        height: 200px;
+    }
+    .seccion1{
+        gap: 5px;
+        flex-direction: column;
+    }
+    .seccion2{
+        gap: 5px;
+        flex-direction: column;
+    }
+    .seccion3{
+        gap: 5px;
+        flex-direction: column;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .inicioCuadro ul{
+        gap: 10px;
+        width: 265px;
+        height: 60px;
+        font-size: 15px;
+
+    }
+    .logo img{
+        width: 30px;
+    }
+    .logo p{
+        font-size: 15px;
+    }
+    .textoCompra{
+        font-size: 10px;
+    }
+    .logos{
+        width: 50px;
+        right: 50px;
+    }
+    .letrasLogos{
+        margin: 0 35px;
+    }
+    footer{
+        height: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    footer p{
+        font-size: 10px;
+    
+    }
+    .footer{
+        justify-content: flex-start;
+    }
+    .footer img{
+        width: 40px;
+        height: 20px;
+    }
+
+}
