@@ -1,9 +1,9 @@
- *{
+widm *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-/* 
+/*
 colores
     color de fondo
     #D1E4CB
@@ -27,6 +27,7 @@ colores
 
 body{
     background-color: #D1E4CB;
+
 }
 
 /* inicio de estilos de header */
@@ -83,170 +84,380 @@ a{
     text-decoration: none;
 }
 
-/* inicio del main */
-.contenidoPrincipal h1{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
-    display: flex;
-    margin-top: 30px;
-
-    justify-content: center;
-}
-
-.contenidoUnico h1{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-.banerUno{
+/*main de inicio*/
+main{
     width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/fondo.jpg);
+    background-repeat: no-repeat;
 }
-.banerDos{
-    width: 100%;
-    height: 300px;
-}
-.banerTres{
-    width: 100%;
-    height: 300px;
-}
-.textoColor p{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
 }
-.main h2{
-    display: flex;
-    justify-content: center;
-    color: red;
-    text-align: center;
-}
-.textoColor{
-    font-family: 'Roboto Condensed', sans-serif;
-    margin: 10px;
-}
-
-
-/* tamano de imagen */
-.tamanoImg{
-    width: 350px;
-    height: 350px;
-    border-radius: 10px;
-}
-/* primera seccion del main */
-.seccion{
-    grid-area: item;
-    display: flex;
-    flex-direction: column;
+.main1{
+    color: white;
+    display: grid;
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-
-
-}
-
-.seccion1{
-    grid-area: item1;
-    display: flex;
-    gap: 70px;
-    margin-bottom: 20px;
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
     justify-self: center;
-    text-align: center;
+    background-color: rgba(128, 128, 128, 0.527);
+    width: 1000px;
+    height: 200px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    border-radius: 20px;
 
 }
-
-.seccion2{
-    grid-area: item2;
-    display: flex;
-    gap: 70px;
-    margin-bottom: 20px;
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-    justify-self: center;
-    text-align: center;
-}
-
-.seccion3{
-    grid-area: item3;
-    display: flex;
-    gap: 70px;
-    margin-bottom: 20px;
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-    justify-self: center;
-    text-align: center;
-}
-
-
-.grid{
+.main1 h1{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
+    justify-content: center;
+
+
+}
+.main2{
+    color: white;
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #2f962db8;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    justify-self: center;
+    text-align: center;
+}
+.main2 h2{
+    display: grid;
+    justify-content: center;
+}
+.main3{
+    color: white;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #2f962db8;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    justify-self: center;
+    text-align: center;
+}
+
+.main3 h2{
+    display: grid;
+    justify-content: center;
+}
+.main4{
+    color: white;
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: #2f962db8;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    justify-self: center;
+    text-align: center;
+}
+
+.main4 h2{
+    display: grid;
+    justify-content: center;
+}
+
+.main5{
+    color: white;
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-color: rgba(128, 128, 128, 0.515);
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    justify-self: center;
+    border-radius: 20px;
 
 
 }
 
 
-        /* cuadro de mi carrito */
-.inicioCuadro ul{
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-        margin-top: 30px;
-        text-align: center;
-        background-color: #B9C7BA;
-        height: 30px;
-        
+/* main de frutas */
+.frutas{
+    background-image: url(../assets/img/frutas-fondo.jpg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px repeat(3, 1fr);
+
+}
+.titulo{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    background-color: rgba(128, 128, 128, 0.768);
+    height: 180px;
+    color: white;
+}
+.titulo h1{
+    text-align: center;
+
 }
 
-.inicioCuadro ul li{
-    list-style: none;
+.frutas1{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    justify-self: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.frutas1 h2{
+    font-size: 20px;
+}
+
+.frutas2{
+    grid-column: 1/5;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    justify-self: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.frutas2 h2{
+    font-size: 20px;
+}
+
+.frutas3{
+    grid-column: 1/5;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    justify-self: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.frutas3 h2{
+    font-size: 20px;
+}
+
+/* main de verduras */
+.verduras{
+    background-image: url(../assets/img/frutas-y-verduras.jpg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px repeat(3, 1fr);
+    font-size: 20px;
+}
+.verduras h2{
+    font-size: 25px;
+    background-color: rgb(67, 139, 67);
+    height: 100px;
+    border-radius: 20px;
+    color: white;
+}
+.verduras a{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.737);
+    border-radius: 5px;
+}
+
+.verduras1{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-color: rgba(128, 128, 128, 0.776);
+    text-align: center;
+    color: white;
+    width: 900px;
+    justify-self: center;
+}
+.verduras2{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-self: center; 
+    gap: 50px;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.verduras2 img{
+    width: 300px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.verduras3{
+    grid-column: 1/7;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.verduras3 img{
+    width: 300px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.verduras4{
+    grid-column: 1/7;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.verduras4 img{
+    width: 300px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+/* main de carrito */
+.carrito{
+    background-image: url(../assets/img/frutas-fondo.jpg);
+    height: 1000px;
+
+
+}
+.carrito1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carrito2 ul{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    margin: 30px;
+    text-align: center;
+    background-color: #b9c7ba59;
+    height: 30px;
+}
+
+.carrito2 ul li{
+list-style: none;
 }
 
 .logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
+display: flex;
+flex-direction: row;
+justify-content: end;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
 }
 
 .logoCarrito{
-    background-color: red;
-    width: 180px;
-    margin: 10px 10px 10px;
+background-color: red;
+width: 130px;
+height: 150px;
+margin: 10px 10px 10px;
 } 
 
 .logoCarrito2{
-    background-color: #2F962D;
-    width: 180px;
-    margin: 10px 10px 10px;
+background-color: #2F962D;
+margin: 10px 10px 10px;
+}
+
+.total{ 
+    text-align: center;
+    color: black;
+    font-size: 20px;
 }
 
 .textoCompra{
-    text-align: center;
+text-align: center;
+color: red;
+background-color: rgba(128, 128, 128, 0.605);
+justify-content: center;
+margin: 10px;
 }
 
 
-/* contactos formulario */
+.contactos{
+    background-image: url(../assets/img/fondo-contactos.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.contactos h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+}
+.contactos h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 45px;
+    margin: 20px;
+    color: black;
+    
+}
 .fondoBox{
-    background-color: #B9C7BA;
+    background-color: gray;
+    margin: 10px;
 }
 .box{
     background-color: green;
     width: 100px;
     margin: 10px 10px;
+    border-radius: 5px;
 }
 
 /* logos de apartado contactos */
-.logos{
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logos img{
     width: 80px;
     right: 80px;
-    margin: 10px;
+    margin: 20px;
 }
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+
 .letrasLogos{
     margin: 0 10px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.mapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mapa img{
+    width: 900px;
+    height: 300px;
+    margin: 10px;
 }
 
 
@@ -259,9 +470,6 @@ footer{
 .footer{
     display: flex;
     justify-content: flex-end;
-}
-.textoFooter{
-    margin-top: 30px;
 }
 
 /* mediaqueries 1440 */
@@ -285,46 +493,50 @@ footer{
     }
 
     /* main */
-    .contenidoPrincipal h1{
+    .titulo h1{
         font-size: 30px;
         margin-top: 20px;
     }
-    .contenidoUnico h1{
+    .main1 h1{
         font-size: 40px;
         margin-top: 20px;
         margin-bottom: 30px;
     }
-    .banerUno{
-        width: 100%;
-        height: 300px;
-    }
-    .banerDos{
-        width: 100%;
-        height: 300px;
-    }
-    .banerTres{
-        width: 100%;
-        height: 300px;
-    }
+    
     .textoColor p{
         font-size: 18px;
     }
     .main h2{
         font-size: 20px;
     }
-    .tamanoImg{
+    /* .tamanoImg{
         border-radius: 10px;
         width: 300px;
         height: 300px;
-    }
-    .seccion1{
+    } */
+    .frutas1{
         gap: 60px;
     }
-    .seccion2{
+    .frutas2{
         gap: 60px;
     }
-    .seccion3{
+    .frutas3{
         gap: 60px;
+    }
+    .verduras2 img{
+        width: 250px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .verduras3 img{
+        width: 250px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .verduras4 img{
+        width: 250px;
+        height: 200px;
+        border-radius: 20px;
     }
 }
 
@@ -349,51 +561,115 @@ footer{
     }
 
     /* main */
-    .contenidoPrincipal h1{
+    .titulo h1{
         font-size: 30px;
         margin-top: 20px;
     }
-    .contenidoUnico h1{
+    .main h1{
         font-size: 30px;
         margin-top: 20px;
         margin-bottom: 30px;
     }
-    .banerDos{
-        width: 100%;
+    .main1{
+        width: 900px;
         height: 200px;
     }
-    .banerTres{
-        width: 100%;
-        height: 180px;
+    .frutas{
+        grid-template-rows: 300px repeat(3, 1fr);
     }
-    .textoColor p{
-        font-size: 18px;
+    .titulo{
+        height: 280px;
+        margin: 10px;
+        border-radius: 10px;
     }
-    .main h2{
+    .frutas1{
+        gap: 10px;
+    }
+    .frutas2{
+        gap: 10px;
+    }
+    .frutas3{
+        gap: 10px;
+    }
+
+    .verduras h2{
         font-size: 20px;
     }
-    .tamanoImg{
-        border-radius: 10px;
-        width: 180px;
-        height: 180px;
+    .verduras1{
+        font-size: 15px;
     }
-    .seccion1{
+    .verduras2{
         gap: 30px;
     }
-    .seccion2{
+    .verduras2 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .verduras3{
         gap: 30px;
     }
-    .seccion3{
+    .verduras3 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .verduras4{
         gap: 30px;
+    }
+    .verduras4 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .carrito ul{
+        gap: 100px;
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    .logoCarrito{
+        width: 130px;
+        height: 130px;
+    }
+    .logoCarrito2{
+        width: 130px;
+        height: 130px;
+    }
+
+    .contactos h1{
+        font-size: 30px;
+    }
+    .contactos h2{
+        font-size: 30px;
+    }
+    .formulario{
+        display: grid;
+    }
+    .logos img{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+    .letrasLogos{
+        font-size: 20px;
+    }
+    .mapa img{
+        width: 800px;
+        height: 200px;
+
     }
 }
 
 
+
 /* media queries escritorio a tab */
 @media (max-width:768px){
-
-    /* header */
-    header{
+    
+     /* header */
+     header{
         width: 100%;
     }
     header img{
@@ -418,45 +694,147 @@ footer{
         font-size: 20px;
     }
 
+
     /* main */
-    .contenidoPrincipal h1{
+    .titulo h1{
         font-size: 30px;
         margin-top: 20px;
     }
-    .contenidoUnico h1{
+    .main h1{
         font-size: 30px;
         margin-top: 20px;
         margin-bottom: 30px;
     }
-    .banerDos{
-        width: 100%;
+    .main1{
+        width: 700px;
         height: 250px;
     }
-    .banerTres{
-        width: 100%;
-        height: 180px;
+    .main2{
+        width: 200px;
+        height: 250px;
     }
-    .textoColor p{
-        font-size: 18px;
+    .main3{
+        width: 200px;
+        height: 250px;
     }
-    .main h2{
+    .main4{
+        width: 200px;
+        height: 250px;
+    }
+    .frutas{
+        background-image: url(background-color: #487346);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: repeat;
+        grid-template-rows: 400px repeat(3, 1fr);
+    }
+    .titulo{
+        height: 350px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .frutas1{
+        gap: 10px;
+        flex-direction: column;
+        
+    }
+    .frutas2{
+        gap: 10px;
+        flex-direction: column;
+    }
+    .frutas3{
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .verduras{
+            background-image: url(background-color: #487346);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+            background-position: center;
+            background-repeat: repeat;
+            grid-template-rows: 200px repeat(3, 1fr);
+    }
+    .verduras h2{
         font-size: 20px;
     }
-    .tamanoImg{
+    .verduras1{
+        font-size: 15px;
+        width: 600px;
+        height: 200px;
+        margin: 10px;
         border-radius: 10px;
-        width: 180px;
-        height: 180px;
     }
-    .seccion1{
-        gap: 10px;
+    .verduras2{
+        gap: 50px;
+        flex-direction: column;
+        margin: 20px;
     }
-    .seccion2{
-        gap: 10px;
+    .verduras2 img{
+        width: 300px;
+        height: 280px;
+        border-radius: 20px;
     }
-    .seccion3{
-        gap: 10px;
+    .verduras3{
+        gap: 50px;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .verduras3 img{
+        width: 300px;
+        height: 280px;
+        border-radius: 20px;
+    }
+    .verduras4{
+        gap: 50px;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .verduras4 img{
+        width: 300px;
+        height: 280px;
+        border-radius: 20px;
+    }
+
+    .carrito ul{
+        gap: 70px;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .logoCarrito{
+        width: 100px;
+        height: 100px;
+    }
+    .logoCarrito2{
+        width: 100px;
+        height: 100px;
+    }
+
+    .contactos h1{
+        font-size: 30px;
+    }
+    .contactos h2{
+        font-size: 30px;
+    }
+    .formulario{
+        display: grid;
+    }
+    .logos img{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+    .letrasLogos{
+        font-size: 20px;
+    }
+    .mapa img{
+        width: 500px;
+        height: 200px;
+
     }
 }
+
 
 @media (max-width:425px){
     body{
@@ -486,102 +864,159 @@ footer{
     .header{
         font-size: 15px;
     }
-    .contenidoPrincipal h1{
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size: 25px;
-        margin-top: 10px;
+    .titulo h1{
+        font-size: 30px;
+        margin-top: 20px;
     }
-    .contenidoUnico h1{
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size: 25px;
-        margin-top: 10px;
-        margin-bottom: 15px;
+    .main h1{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
-    .banerUno{
-        height: 150px;
+    .main{
+        background-image: url(background-color: #487346);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: repeat;
+        grid-template-rows: 500px repeat(4, 400px);
     }
-    .banerDos{
-        width: 100%;
-        height: 150px;
+    .main1{
+        width: 300px;
+        height: 400px;
+    }
+    .main2{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+    }
+    .main3{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .main4{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    .main5{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+
+    .frutas{
+        background-image: url(background-color: #487346);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: repeat;
+        grid-template-rows: 500px repeat(3, 1fr);
+    }
+    .titulo{
+        width: 350px;
+        height: 400px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .frutas1{
+        gap: 30px;
+        flex-direction: column;
         
     }
-    .banerTres{
-        width: 100%;
-        height: 150px;
+    .frutas2{
+        gap: 30px;
+        flex-direction: column;
     }
-    .textoColor p{
+    .frutas3{
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .verduras{
+        grid-template-rows: 320px repeat(3, 1fr);
+    }
+    .verduras h2{
         font-size: 20px;
     }
-    .main h2{
-        font-size: 20px;
+    .verduras1{
+        font-size: 15px;
+        width: 300px;
+        height: 300px;
     }
-    .tamanoImg{
-        border-radius: 12px;
+    .verduras2{
+        gap: 30px;
+    }
+    .verduras2 img{
         width: 200px;
         height: 200px;
+        border-radius: 20px;
     }
-    .seccion1{
-        gap: 5px;
-        flex-direction: column;
+    .verduras3{
+        gap: 30px;
     }
-    .seccion2{
-        gap: 5px;
-        flex-direction: column;
+    .verduras3 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
     }
-    .seccion3{
-        gap: 5px;
-        flex-direction: column;
+    .verduras4{
+        gap: 30px;
     }
-    .grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+    .verduras4 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
     }
 
-    /* mi carrito */
-    .inicioCuadro ul{
-        gap: 30px;
-        width: 380px;
-        height: 60px;
-        font-size: 15px;
+    .carrito ul{
+        gap: 10px;
+    }
+    .carrito2 ul{
+        height: 80px;
     }
     .logo img{
-        width: 30px;
-    }
-    .logo p{
-        font-size: 15px;
-    }
-    .textoCompra{
-        font-size: 10px;
-    }
-    .logos{
         width: 50px;
-        right: 50px;
+        height: 50px;
+    }
+    .logoCarrito{
+        width: 100px;
+        height: 100px;
+    }
+    .logoCarrito2{
+        width: 100px;
+        height: 100px;
+    }
+
+    .contactos h1{
+        font-size: 20px;
+    }
+    .contactos h2{
+        font-size: 20px;
+    }
+    .formulario{
+        display: grid;
+    }
+    .logos img{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
     }
     .letrasLogos{
-        margin: 0 35px;
-    }
-    footer{
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-    }
-    footer p{
         font-size: 15px;
-        text-align: center;
-        margin-bottom: 10px;
-    
     }
-    .footer{
-        justify-content: center;
-    }
-    .footer img{
-        width: 40px;
-        height: 20px;
-    }
+    .mapa img{
+        width: 400px;
+        height: 200px;
 
-
+    }
 }
+
+
+
 
 /* mediaqueries 375 */
 @media (max-width:375px){
@@ -614,73 +1049,167 @@ footer{
         font-size: 18px;
         
     }
-    .contenidoPrincipal h1{
+
+    .titulo h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .main h1{
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
-    .contenidoUnico h1{
+    .main{
+        background-image: url(background-color: #487346);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: repeat;
+        grid-template-rows: 500px repeat(4, 400px);
+    }
+    .main1{
+        width: 300px;
+        height: 400px;
+    }
+    .main2{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+    }
+    .main3{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .main4{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    .main5{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+
+    .frutas{
+        background-image: url(background-color: #487346);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: repeat;
+        grid-template-rows: 500px repeat(3, 1fr);
+    }
+    .titulo{
+        width: 350px;
+        height: 400px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .frutas1{
+        gap: 30px;
+        flex-direction: column;
+        
+    }
+    .frutas2{
+        gap: 30px;
+        flex-direction: column;
+    }
+    .frutas3{
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .verduras{
+        grid-template-rows: 320px repeat(3, 1fr);
+    }
+    .verduras h2{
         font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 15px;
     }
-    .banerUno{
-        height: 130px;
-    }
-    .banerDos{
-        height: 130px;
-    }
-    .banerTres{
-        height: 130px;
-    }
-    .textoColor p{
+    .verduras1{
         font-size: 15px;
+        width: 300px;
+        height: 300px;
     }
-    .main h2{
-        font-size: 15px;
+    .verduras2{
+        gap: 30px;
     }
-    .tamanoImg{
+    .verduras2 img{
         width: 200px;
         height: 200px;
+        border-radius: 20px;
     }
-    .seccion1{
+    .verduras3{
+        gap: 30px;
+    }
+    .verduras3 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .verduras4{
+        gap: 30px;
+    }
+    .verduras4 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .carrito{
+        background-image: url(background-color: #487346);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: repeat;
+    }
+    .carrito ul{
         gap: 5px;
-        flex-direction: column;
     }
-    .seccion2{
-        gap: 5px;
-        flex-direction: column;
-    }
-    .seccion3{
-        gap: 5px;
-        flex-direction: column;
-    }
-    .grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-    .inicioCuadro ul{
-        gap: 10px;
-        width: 265px;
-        height: 60px;
-        font-size: 15px;
+    .carrito2 ul{
+        width: 350px;
+        height: 80px;
+        background-color: rgba(128, 128, 128, 0.582);
+        margin: 5px;
 
     }
     .logo img{
         width: 30px;
+        height: 30px;
     }
-    .logo p{
-        font-size: 15px;
+    .logoCarrito{
+        width: 80px;
+        height: 80px;
     }
-    .textoCompra{
-        font-size: 10px;
+    .logoCarrito2{
+        width: 80px;
+        height: 80px;
     }
-    .logos{
+
+    .contactos h1{
+        font-size: 20px;
+    }
+    .contactos h2{
+        font-size: 20px;
+    }
+    .formulario{
+        display: grid;
+    }
+    .logos img{
         width: 50px;
-        right: 50px;
+        height: 50px;
+        margin: 10px;
     }
     .letrasLogos{
-        margin: 0 35px;
+        font-size: 15px;
     }
+    .mapa img{
+        width: 300px;
+        height: 200px;
+
+    }
+
     footer{
         height: 30px;
         display: flex;
@@ -729,73 +1258,172 @@ footer{
         font-size: 15px;
         
     }
-    .contenidoPrincipal h1{
+    
+    .titulo h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .main h1{
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
-    .contenidoUnico h1{
+    .main{
+        background-image: url(background-color: #487346);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: repeat;
+        grid-template-rows: 500px repeat(4, 400px);
+    }
+    .main1{
+        width: 300px;
+        height: 400px;
+    }
+    .main2{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+    }
+    .main3{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .main4{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    .main5{
+        width: 200px;
+        height: 250px;
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+
+    .frutas{
+        background-image: url(background-color: #487346);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: repeat;
+        grid-template-rows: 500px repeat(3, 1fr);
+    }
+    .titulo{
+        width: 300px;
+        height: 400px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .frutas1{
+        gap: 30px;
+        flex-direction: column;
+        
+    }
+    .frutas2{
+        gap: 30px;
+        flex-direction: column;
+    }
+    .frutas3{
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .verduras{
+        grid-template-rows: 320px repeat(3, 1fr);
+    }
+    .verduras h2{
         font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 15px;
     }
-    .banerUno{
-        height: 130px;
-    }
-    .banerDos{
-        height: 130px;
-    }
-    .banerTres{
-        height: 130px;
-    }
-    .textoColor p{
+    .verduras1{
         font-size: 15px;
+        width: 300px;
+        height: 300px;
     }
-    .main h2{
-        font-size: 15px;
+    .verduras2{
+        gap: 30px;
     }
-    .tamanoImg{
+    .verduras2 img{
         width: 200px;
         height: 200px;
+        border-radius: 20px;
     }
-    .seccion1{
+    .verduras3{
+        gap: 30px;
+    }
+    .verduras3 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .verduras4{
+        gap: 30px;
+    }
+    .verduras4 img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .carrito{
+        background-image: url(background-color: #487346);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c8e43' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%236aac5f' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c8e43' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%236aac5f' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2389CC7C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23768c3a' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2396ac58' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2396ac58' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23768c3a' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23B6CC76' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23768c3a' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2396ac58' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23B6CC76' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: repeat;
+    }
+    .carrito ul{
         gap: 5px;
-        flex-direction: column;
+        font-size: 12px;
     }
-    .seccion2{
-        gap: 5px;
-        flex-direction: column;
-    }
-    .seccion3{
-        gap: 5px;
-        flex-direction: column;
-    }
-    .grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-    .inicioCuadro ul{
-        gap: 10px;
-        width: 265px;
-        height: 60px;
-        font-size: 15px;
+    .carrito2 ul{
+        width: 300px;
+        height: 50px;
+        background-color: rgba(128, 128, 128, 0.582);
+        margin: 5px;
 
     }
     .logo img{
-        width: 30px;
+        width: 20px;
+        height: 20px;
     }
     .logo p{
-        font-size: 15px;
+        font-size: 12px;
     }
-    .textoCompra{
-        font-size: 10px;
+    .logoCarrito{
+        width: 70px;
+        height: 70px;
     }
-    .logos{
+    .logoCarrito2{
+        width: 70px;
+        height: 70px;
+    }
+
+    .contactos h1{
+        font-size: 20px;
+    }
+    .contactos h2{
+        font-size: 20px;
+    }
+    .formulario{
+        display: grid;
+    }
+    .logos img{
         width: 50px;
-        right: 50px;
+        height: 50px;
+        margin: 10px;
     }
+    
     .letrasLogos{
-        margin: 0 35px;
+        font-size: 12px;
     }
+    .mapa img{
+        width: 280px;
+        height: 150px;
+
+    }
+
     footer{
         height: 30px;
         display: flex;
@@ -814,3 +1442,6 @@ footer{
     }
 
 }
+
+
+
