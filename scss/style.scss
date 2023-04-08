@@ -1,0 +1,18 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "base/reset";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/main-index";
+@import "layout/main-frutas";
+@import "layout/main-verduras";
+@import "layout/main-micarrito";
+@import "layout/main-contactos";
+
+/*media-query*/
+@import "./layout/media/media-1440";
+@import "./layout/media/media-1024";
+@import "./layout/media/media-768";
+@import "./layout/media/media-425";
+@import "./layout/media/media-320";

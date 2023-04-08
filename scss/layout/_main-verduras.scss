@@ -1,0 +1,51 @@
+.verduras{
+    background-image: url(../assets/img/frutas-y-verduras.jpg);
+    @include grid(repeat(4, 1fr),250px repeat(3, 1fr));
+    @include background;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    h2{
+        font-size: 25px;
+        background-color: rgb(67, 139, 67);
+        height: 100px;
+        border-radius: 20px;
+        color: white;
+    }
+    a{
+        color: black;
+        background-color: rgba(255, 255, 255, 0.737);
+        border-radius: 5px;
+    }
+    img{
+        width: 300px;
+        height: 250px;
+        border-radius: 30px;
+    }
+    .verduras1{
+        grid-column: 1/5;
+        grid-row: 1/2;
+        background-color: rgba(128, 128, 128, 0.776);
+        text-align: center;
+        color: white;
+        width: 1200px;
+        justify-self: center;
+        font-size: 15px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .verduras2{
+        grid-column: 1/5;
+        grid-row: 2/3;
+        @include flexVerduras;
+    }
+    .verduras3{
+        grid-column: 1/7;
+        grid-row: 3/4;
+        @include flexVerduras;
+    }
+    .verduras4{
+        grid-column: 1/7;
+        grid-row: 4/5;
+        @include flexVerduras;
+        }
+}

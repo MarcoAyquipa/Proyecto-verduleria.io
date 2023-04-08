@@ -1,0 +1,55 @@
+.contactos{
+    background-image: url(../assets/img/fondo-contactos.jpg);
+    @include background;
+    font-family: 'Roboto Condensed', sans-serif;
+    h1{
+        @include flex;
+        color: white;
+        font-size: 60px;
+    }
+    h2{
+        @include flex;
+        font-size: 45px;
+        margin-top: 60px;
+        color: white;
+    }
+    .formulario{
+        @include flex;
+        label{
+            background-color: gray;
+            margin: 10px;
+        }
+        p{
+            background-color: green;
+            width: 100px;
+            margin: 5px 10px;
+            border-radius: 5px;
+        }
+    }
+    .logos{
+        @include flex;
+        text-align: center;
+        gap: 50px;
+        img{
+            width: 80px;
+            right: 80px;
+            margin: 20px;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        p{
+            margin: 10 10px;
+            font-size: 30px;
+            color: rgba(255, 255, 255, 0.626);
+        }
+    }
+    .mapa{
+        @include flex;
+        img{
+            width: 900px;
+            height: 300px;
+            margin: 10px;
+        }
+    }
+}
