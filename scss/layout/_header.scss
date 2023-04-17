@@ -1,7 +1,7 @@
 header{
     background-color: $background-header;
     nav{
-        color: white;
+        color: $fontsize-w;
         font-family: 'Tilt Warp', cursive;
         font-size: 30px;
         margin: auto 30px;
@@ -17,12 +17,12 @@ header{
         margin-left: 5px;
     }
     a{
-        color: white;
+        color: $fontsize-w;
         text-decoration: none;
     }
 }
 .header{
-    color: white;
+    color: $fontsize-w;
     font-family: 'Tilt Warp', cursive;
     font-size: 30px;
     margin: 0 30px;

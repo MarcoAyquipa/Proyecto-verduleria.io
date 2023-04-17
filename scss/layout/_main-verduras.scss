@@ -1,6 +1,6 @@
 .verduras{
     background-image: url(../assets/img/frutas-y-verduras.jpg);
-    @include grid(repeat(4, 1fr),250px repeat(3, 1fr));
+    @include grid(repeat(4, 1fr),280px repeat(3, 1fr));
     @include background;
     font-size: 20px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -8,8 +8,9 @@
         font-size: 25px;
         background-color: rgb(67, 139, 67);
         height: 100px;
+        margin-top: 10px;
         border-radius: 20px;
-        color: white;
+        color: $fontsize-w;
     }
     a{
         color: black;
@@ -26,10 +27,11 @@
         grid-row: 1/2;
         background-color: rgba(128, 128, 128, 0.776);
         text-align: center;
-        color: white;
+        color: $fontsize-w;
         width: 1200px;
+        height: 220px;
         justify-self: center;
-        font-size: 15px;
+        font-size: 20px;
         margin: 10px;
         border-radius: 10px;
     }

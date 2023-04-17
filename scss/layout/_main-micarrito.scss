@@ -18,14 +18,14 @@
     }
     p{
         text-align: center;
-        color: white;
+        color: $fontsize-w;
         font-size: 20px;
     }
     h1{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        color: white;
+        color: $fontsize-w;
     }
     h2{
         text-align: center;

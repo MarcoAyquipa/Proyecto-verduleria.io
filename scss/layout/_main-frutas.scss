@@ -1,6 +1,6 @@
 .frutas{
     background-image: url(../assets/img/frutas-fondo.jpg);
-    @include grid(repeat(4, 1fr), 300px repeat(3, 1fr));
+    @include grid(repeat(4, 1fr), 220px repeat(3, 1fr));
     @include background;
     font-family: 'Roboto Condensed', sans-serif;
     h1{
@@ -16,8 +16,9 @@
         flex-direction: column;
         justify-self: center;
         background-color: rgba(128, 128, 128, 0.768);
-        height: 270px;
-        color: white;
+        height: 180px;
+        font-size: 20px;
+        color: $fontsize-w;
         border-radius: 10px;
         margin: 10px;
     }
@@ -25,12 +26,15 @@
         grid-column: 1/5;
         grid-row: 2/3;
         @include flexFrutas;
+        
     }
     .frutas2{
         grid-column: 1/5;
         grid-row: 3/4;
         @include flexFrutas;
+        
     }
+
     .frutas3{
         grid-column: 1/5;
         grid-row: 4/5;

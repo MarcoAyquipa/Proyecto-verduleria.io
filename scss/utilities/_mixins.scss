@@ -30,6 +30,13 @@
     justify-self: center;
     margin-bottom: 40px;
     text-align: center;
+    a{
+        font-size: 18px;
+        &:hover{
+            color: red;
+            font-size: 15px;
+        }
+    }
 
 }
 
